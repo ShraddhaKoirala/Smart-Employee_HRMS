@@ -99,39 +99,31 @@ http://localhost/hrms/
 
 ## 🔐 Login Page
 
-*(Add Screenshot Here)*
+![Login Page](screenshots/login.png)
 
 ---
 
 ## 📊 Dashboard
 
-*(Add Screenshot Here)*
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
 ## 👥 Employee Management
 
-*(Add Screenshot Here)*
-
----
-
-## 📝 Leave Management
-
-*(Add Screenshot Here)*
+![Employee Management](screenshots/employee-management.png)
 
 ---
 
 ## 💰 Payroll Management
 
-*(Add Screenshot Here)*
+![Payroll Management](screenshots/payroll.png)
 
 ---
 
-## 📅 Attendance
+## 👨‍💼 Employee Portal
 
-*(Add Screenshot Here)*
-
----
+![Employee Portal](screenshots/employee-portal.png)
 
 # 🎯 Learning Outcomes
 
