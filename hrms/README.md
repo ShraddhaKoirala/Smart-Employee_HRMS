@@ -1,144 +1,165 @@
 # 🏢 Smart Employee & HR Management System (HRMS)
 
-A web-based Human Resource Management System (HRMS) developed using Django to simplify employee management, leave requests, payroll, attendance, and HR operations within an organization.
+![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
+![XAMPP](https://img.shields.io/badge/XAMPP-FB7A24?logo=xampp&logoColor=white)
+
+A web-based Human Resource Management System (HRMS) developed using **PHP** and **MySQL** to simplify employee management, attendance tracking, leave requests, payroll, and other HR operations.
 
 ---
 
-## 📌 Project Overview
+# 📖 Project Overview
 
-The Smart Employee & HR Management System is designed to automate routine HR tasks and provide an efficient way to manage employee information. It offers separate functionalities for administrators and employees, making HR operations faster, organized, and more secure.
+The Smart Employee & HR Management System is designed to automate and simplify daily HR activities. It enables administrators to efficiently manage employees, attendance, leave requests, payroll, and departments through an easy-to-use web interface.
+
+This project was developed as part of my academic learning to strengthen my skills in PHP, MySQL, frontend development, and database management.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- 🔐 Secure User Authentication
-- 👤 Employee Profile Management
-- 📝 Leave Request Management
+- 🔐 Secure Admin Login
+- 👥 Employee Management
+- 🏢 Department Management
+- 📝 Leave Management
 - 💰 Payroll Management
-- 📅 Attendance Management
-- 📢 Announcement System
+- 📅 Attendance Tracking
+- 📢 Announcement Management
 - 📊 Dashboard with Statistics
-- 🔍 Employee Search & Filter
+- 🔍 Search & Filter Employees
 - 👨‍💼 Admin Panel
 - 📱 Responsive User Interface
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Tech Stack
 
 | Technology | Purpose |
 |------------|----------|
-| Python | Backend Programming |
-| Django | Web Framework |
+| PHP | Backend Development |
+| MySQL | Database |
 | HTML5 | Structure |
 | CSS3 | Styling |
-| JavaScript | Client-side Interactivity |
-| SQLite | Database |
-| Bootstrap | Responsive UI |
+| JavaScript | Client-side Functionality |
+| Bootstrap | Responsive Design |
+| XAMPP | Local Development Server |
 
 ---
 
-## 📂 Project Structure
+# 📂 Folder Structure
 
-```
-HRMS/
+```text
+HRMS
 │
 ├── admin/
 ├── employee/
-├── hrms/
-├── static/
-├── templates/
-├── manage.py
-├── db.sqlite3
+├── assets/
+├── config/
+├── database/
+├── includes/
+├── css/
+├── js/
+├── index.php
+├── login.php
 └── README.md
 ```
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
-1. Clone the repository
+1. Install **XAMPP**.
+2. Copy the project folder into:
 
-```bash
-git clone https://github.com/ShraddhaKoirala/Smart-Employee_HRMS.git
+```text
+C:\xampp\htdocs\hrms
 ```
 
-2. Move into the project
+3. Start **Apache** and **MySQL**.
 
-```bash
-cd Smart-Employee_HRMS
-```
+4. Open phpMyAdmin.
 
-3. Install dependencies
+5. Create a database.
 
-```bash
-pip install -r requirements.txt
-```
+6. Import the SQL file included with the project.
 
-4. Run migrations
+7. Open your browser and visit:
 
-```bash
-python manage.py migrate
-```
-
-5. Start the server
-
-```bash
-python manage.py runserver
-```
-
-6. Open
-
-```
-http://127.0.0.1:8000/
+```text
+http://localhost/hrms/
 ```
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-### Login Page
+## 🔐 Login Page
 
-(Add Screenshot Here)
-
----
-
-### Dashboard
-
-(Add Screenshot Here)
+*(Add Screenshot Here)*
 
 ---
 
-### Employee Management
+## 📊 Dashboard
 
-(Add Screenshot Here)
-
----
-
-### Leave Management
-
-(Add Screenshot Here)
+*(Add Screenshot Here)*
 
 ---
 
-### Payroll
+## 👥 Employee Management
 
-(Add Screenshot Here)
+*(Add Screenshot Here)*
 
 ---
 
-## 🔮 Future Enhancements
+## 📝 Leave Management
+
+*(Add Screenshot Here)*
+
+---
+
+## 💰 Payroll Management
+
+*(Add Screenshot Here)*
+
+---
+
+## 📅 Attendance
+
+*(Add Screenshot Here)*
+
+---
+
+# 🎯 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- PHP Programming
+- CRUD Operations
+- MySQL Database Design
+- Session Management
+- User Authentication
+- Responsive Web Design
+- Database Connectivity
+- HR Workflow Automation
+
+---
+
+# 🔮 Future Enhancements
 
 - Email Notifications
-- Performance Evaluation
+- Employee Performance Evaluation
 - Recruitment Module
-- Mobile Responsive Improvements
-- Data Analytics Dashboard
+- Export Reports (PDF & Excel)
+- Dark Mode
+- Mobile Optimization
 
 ---
 
-## 👩‍💻 Developer
+# 👩‍💻 Developer
 
 **Shraddha Koirala**
 
@@ -146,6 +167,8 @@ Bachelor of Information Management (BIM)
 
 Tribhuvan University
 
+GitHub: https://github.com/ShraddhaKoirala
+
 ---
 
-## ⭐ If you like this project, consider giving it a star!
+⭐ If you found this project interesting, please consider giving it a star!
