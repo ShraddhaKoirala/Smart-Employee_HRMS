@@ -1,0 +1,224 @@
+HR MANAGEMENT SYSTEM - COMPLETE FILE STRUCTURE
+==============================================
+
+PROJECT ROOT: hrms/
+│
+├── 📄 index.php                    (Main login page - role-based routing)
+├── 📄 db.php                       (Database configuration)
+├── 📄 logout.php                   (Logout functionality)
+├── 📄 database.sql                 (Complete database setup with sample data)
+├── 📄 README.md                    (Comprehensive documentation)
+├── 📄 QUICK_START.md               (Quick setup guide)
+│
+├── 📁 admin/                       (HR/Admin Portal)
+│   ├── 📄 dashboard.php            (Admin dashboard with statistics)
+│   ├── 📄 employees.php            (Add/Edit/Delete employees)
+│   ├── 📄 leave_requests.php       (Approve/Reject leave requests)
+│   ├── 📄 policies.php             (Manage HR policies)
+│   ├── 📄 messages.php             (View employee messages)
+│   └── 📄 payroll.php              (Generate and manage payroll)
+│
+└── 📁 employee/                    (Employee Portal)
+    ├── 📄 dashboard.php            (Employee dashboard)
+    ├── 📄 profile.php              (View personal profile)
+    ├── 📄 leave.php                (Apply for leave & track status)
+    ├── 📄 salary.php               (View salary & payroll history)
+    ├── 📄 policies.php             (Read HR policies)
+    └── 📄 messages.php             (Send messages to HR)
+
+
+DATABASE TABLES:
+================
+
+1. users                    (Login credentials & roles)
+2. employees                (Complete employee information)
+3. leave_requests           (All leave applications)
+4. policies                 (HR policies & guidelines)
+5. messages                 (Employee-HR communication)
+6. payroll                  (Monthly salary records)
+
+
+KEY FEATURES BY FILE:
+=====================
+
+INDEX.PHP (Login)
+- Role-based authentication
+- Redirects admin to admin/dashboard.php
+- Redirects employee to employee/dashboard.php
+- Shows demo credentials
+
+ADMIN PORTAL:
+
+1. dashboard.php
+   - Total employees count
+   - Pending leaves count
+   - Unread messages count
+   - Total departments
+   - Recent leave requests
+   - Recent messages
+
+2. employees.php
+   - Add new employee (with username, password, all details)
+   - View all employees
+   - Toggle employee status (active/inactive)
+   - Delete employees
+   - Full CRUD operations
+
+3. leave_requests.php
+   - View all leave requests from all employees
+   - Approve/Reject with remarks
+   - Real-time status updates
+   - View complete leave details
+   - Filter by status
+
+4. policies.php
+   - Create new HR policies
+   - Categorize policies (Leave, Code of Conduct, etc.)
+   - Delete policies
+   - All policies visible to employees
+
+5. messages.php
+   - View all messages from employees
+   - Mark as read/unread
+   - See sender details
+
+6. payroll.php
+   - Generate monthly payroll for employees
+   - Automatic calculation: Base Salary - (Leaves × $100)
+   - View all payroll records
+   - Month/Year selection
+
+EMPLOYEE PORTAL:
+
+1. dashboard.php
+   - Welcome message with position & department
+   - Statistics cards
+   - Recent leave requests
+   - Quick overview
+
+2. profile.php
+   - Employee ID
+   - Personal information
+   - Department & position
+   - Date of joining
+   - Basic salary
+   - Address
+
+3. leave.php
+   - Apply for leave (6 types available)
+   - Automatic day calculation
+   - Track all leave requests
+   - See status in real-time
+   - View admin remarks
+
+4. salary.php
+   - View basic salary
+   - Complete payroll history
+   - See deductions for leaves
+   - Month-wise breakdown
+
+5. policies.php
+   - Read all HR policies
+   - Categorized view
+   - Company guidelines
+
+6. messages.php
+   - Send messages to HR
+   - Track sent messages
+   - See read/unread status
+
+
+TECHNOLOGY USED:
+================
+
+Frontend:
+- HTML5
+- CSS3 (Embedded in PHP files)
+- JavaScript (Vanilla JS for modals and interactions)
+
+Backend:
+- PHP (Procedural style - easy to understand)
+- MySQL Database
+
+Design:
+- Responsive (works on desktop, tablet, mobile)
+- Admin Theme: Purple gradient
+- Employee Theme: Green gradient
+- Modern card-based UI
+
+
+SECURITY FEATURES:
+==================
+
+✓ Role-based access control
+✓ Session management
+✓ SQL injection prevention (mysqli_real_escape_string)
+✓ Password-protected access
+✓ Automatic logout
+✓ Access restrictions (admin can't access employee pages & vice versa)
+
+
+DEFAULT CREDENTIALS:
+====================
+
+Admin:
+Username: admin
+Password: admin123
+
+Employee (Sample):
+Username: john
+Password: john123
+
+
+REAL-TIME FEATURES:
+===================
+
+✓ Leave status updates immediately visible to employees
+✓ Admin actions reflect instantly
+✓ No page refresh needed for status changes
+✓ Synchronized between admin and employee portals
+
+
+AUTOMATIC CALCULATIONS:
+========================
+
+✓ Leave days: Automatically calculated from date range
+✓ Payroll deductions: $100 per approved leave day
+✓ Net salary: Basic Salary - Total Deductions
+
+
+RESPONSIVE DESIGN:
+==================
+
+✓ Desktop: Full sidebar navigation
+✓ Tablet: Optimized layout
+✓ Mobile: Collapsed sidebar (icons only)
+✓ All features accessible on all devices
+
+
+INSTALLATION:
+=============
+
+1. Install XAMPP/WAMP
+2. Start Apache & MySQL
+3. Create 'hrms' database in phpMyAdmin
+4. Import database.sql
+5. Copy all files to htdocs/hrms/
+6. Access: http://localhost/hrms/
+
+
+CUSTOMIZATION:
+==============
+
+Change colors: Edit CSS in PHP files
+- Admin: #667eea, #764ba2
+- Employee: #48bb78, #38a169
+
+Change deduction: Edit admin/payroll.php
+- Line: $deduction_per_leave = 100;
+
+Add leave types: Edit employee/leave.php
+- Add options in leave type dropdown
+
+Add policy categories: Edit admin/policies.php
+- Add options in category dropdown
