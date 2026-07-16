@@ -99,7 +99,7 @@ http://localhost/hrms/
 
 ## 🔐 Login Page
 
-![Login Page](screenshots/login.png)
+![Login](screenshots/login.png)
 
 ---
 
@@ -117,9 +117,13 @@ http://localhost/hrms/
 
 ## 💰 Payroll Management
 
-![Payroll Management](screenshots/payroll.png)
+![Payroll](screenshots/payroll.png)
 
 ---
+
+## 👨‍💼 Employee Portal
+
+![Employee Portal](screenshots/employee-portal.png)
 
 ## 👨‍💼 Employee Portal
 
